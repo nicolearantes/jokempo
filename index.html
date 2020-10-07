@@ -20,20 +20,20 @@
 </head>
 <body>
     <div id="score">
-        <p class="player1">Player 1 </p>
+        <p class="score-player1">Player 1 </p>
         <p class="px"> x </p>
-        <p class="player2">Player 2 </p>
+        <p class="score-player2">Player 2 </p>
     </div>
 
     <div id="round">
-        <div class="round1">
-            <span><i class="fas fa-hand-paper fa-10x"></i></span>
-            <button><i class="fas fa-hand-rock fa-2x"></i></button>
-            <button><i class="fas fa-hand-paper fa-2x"></i></button>
-            <button><i class="fas fa-hand-scissors fa-2x"></i></button>
+        <div class="player1">
+            <span><i id="player1-choose" class="fas fa-hand-rock fa-10x"></i></span>
+            <button class="player1-button" type="button" data-which-button="rock"><i class="fas fa-hand-rock fa-2x"></i></button>
+            <button class="player1-button" type="button" data-which-button="paper"><i class="fas fa-hand-paper fa-2x"></i></button>
+            <button class="player1-button" type="button" data-which-button="scissors"><i class="fas fa-hand-scissors fa-2x"></i></button>
         </div>
-        <div class="round2">
-            <span><i class="fas fa-hand-paper fa-10x"></i></span>
+        <div class="player2">
+            <span><i class="fas fa-hand-rock fa-10x"></i></span>
             <button><i class="fas fa-hand-rock fa-2x"></i></button>
             <button><i class="fas fa-hand-paper fa-2x"></i></button>
             <button><i class="fas fa-hand-scissors fa-2x"></i></button>
