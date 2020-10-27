@@ -1,10 +1,11 @@
+var currentPlayer1=0
+var currentPlayer2=0
 
 $(".player1-button").on("click", function (e) {
     var item = $(this).data("which-button");
     var action = ["rock", "paper", "scissors"]
     var select = Math.floor(Math.random() * 3);
     var random = action[select];
-
 
 
     $("#player1-choose")
@@ -20,28 +21,32 @@ $(".player1-button").on("click", function (e) {
         .addClass("fa-10x")
 
     if (item === "scissors" && random === "paper") {
-        console.log("Player 1 wins!")
-        $("#score").innerHTML = "Player 1 wins!"
-    } else if (item === "paper" && random === "rock") {
-        console.log("Player 1 wins!")
-        // $(".p-score").innerHTML = "Player 1 wins!"
-    } else if (item === "rock" && random === "scissors") {
-        console.log("Player 1 wins!") 
+        $("#score").text("Player 1 wins!")
+        currentPlayer1+=1
+        $(".player1-score").text(currentPlayer1)
 
-    // $(".p-score").innerHTML = "Player 1 wins!"
+    } else if (item === "paper" && random === "rock") {
+        $("#score").text("Player 1 wins!")
+        currentPlayer1 += 1
+        $(".player1-score").text(currentPlayer1)
+
+    } else if (item === "rock" && random === "scissors") {
+         $("#score").text("Player 1 wins!")
+        currentPlayer1 += 1
+        $(".player1-score").text(currentPlayer1)
+
     } else if (item === random) {
-        // $(".p-score").innerHTML = "Tie!"
-        console.log("Tie!")
+        $("#score").text("Tie!")
     } else {
-        // $(".p-score").innerHTML = "Player 2 wins!"
-        console.log("Player 2 wins!")
+        $("#score").text("CPU wins!")
+        currentPlayer2 += 1
+        $(".player2-score").text(currentPlayer2)
+
     }
 
 });
 
-// function winner() {
 
-// }
 
 
 
