@@ -37,10 +37,16 @@ button {
     padding: 0 100px;
 }
 
+#player1-choose, #player2-choose {
+    position: relative;
+}
+
 .reset {
     font-size: 20px;
     font-family: 'Press Start 2P', cursive;
 }
+
+
 
 
 
